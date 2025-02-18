@@ -1,0 +1,53 @@
+.calculator {
+  width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #2d2d2d; /* Dark background */
+  border-radius: 10px;
+}
+
+.display {
+  color: white;
+  text-align: right;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.input {
+  font-size: 2.5rem;
+  padding: 10px;
+}
+
+.output {
+  font-size: 1.5rem;
+  padding: 10px;
+  color: #999;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.button {
+  padding: 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #666;
+}
+
+/* Making the blank space button the same color as the background */
+.blank-space {
+  background-color: #2d2d2d; /* Same as calculator background */
+  border: none;
+  cursor: default; /* Disable cursor interaction */
+}
